@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "title": "Fender Stratocaster",
+    "description": "Contoured body and versatile sound.",
+    "price": "$1,200.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Fender+Stratocaster",
+    "categoryId": "electric"
+  },
+  {
+    "id": 2,
+    "title": "Gibson Les Paul",
+    "description": "Iconic electric guitar with a solid body and humbucker pickups.",
+    "price": "$2,500.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Gibson+Les+Paul",
+    "categoryId": "electric"
+  },
+  {
+    "id": 3,
+    "title": "Yamaha F310",
+    "description": "Acoustic guitar suitable for beginners, featuring a spruce top.",
+    "price": "$300.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Yamaha+F310",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 4,
+    "title": "Ibanez RG550",
+    "description": "Electric guitar with a fast neck and great for metal and rock.",
+    "price": "$1,000.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Ibanez+RG550",
+    "categoryId": "electric"
+  },
+  {
+    "id": 5,
+    "title": "Martin D-28",
+    "description": "Acoustic guitar renowned for its rich tone and projection.",
+    "price": "$2,800.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Martin+D-28",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 6,
+    "title": "Gibson J-45",
+    "description": "Classic acoustic guitar known for its warm sound.",
+    "price": "$1,800.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Gibson+J-45",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 7,
+    "title": "PRS Custom 24",
+    "description": "Versatile electric guitar with a stunning design and playability.",
+    "price": "$3,200.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=PRS+Custom+24",
+    "categoryId": "electric"
+  },
+  {
+    "id": 8,
+    "title": "Les Paul Standard",
+    "description": "Affordable version of the classic Les Paul with great sound.",
+    "price": "$600.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Epiphone+Les+Paul",
+    "categoryId": "electric"
+  },
+  {
+    "id": 9,
+    "title": "Taylor 314ce",
+    "description": "Acoustic guitar with a cutaway for easy access to higher frets.",
+    "price": "$1,700.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Taylor+314ce",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 10,
+    "title": "Fender Telecaster",
+    "description": "Classic electric guitar known for its bright, cutting tone.",
+    "price": "$1,200.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Fender+Telecaster",
+    "categoryId": "electric"
+  },
+  {
+    "id": 11,
+    "title": "Gretsch G2622",
+    "description": "Electromatic guitar with a classic design and great sound.",
+    "price": "$800.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Gretsch+G2622",
+    "categoryId": "electric"
+  },
+  {
+    "id": 12,
+    "title": "Washburn D10S",
+    "description": "Affordable acoustic guitar with a solid top and great tone.",
+    "price": "$400.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Washburn+D10S",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 13,
+    "title": "Ibanez JEM777",
+    "description": "Signature model electric guitar with a unique design.",
+    "price": "$2,000.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Ibanez+JEM777",
+    "categoryId": "electric"
+  },
+  {
+    "id": 14,
+    "title": "Fender Jaguar",
+    "description": "Classic electric guitar with a distinctive sound and shape.",
+    "price": "$1,500.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Fender+Jaguar",
+    "categoryId": "electric"
+  },
+  {
+    "id": 15,
+    "title": "Schecter Hellraiser",
+    "description": "High-performance guitar with aggressive styling and sound.",
+    "price": "$1,200.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Schecter+Hellraiser",
+    "categoryId": "electric"
+  },
+  {
+    "id": 16,
+    "title": "Taylor GS Mini",
+    "description": "Compact acoustic guitar perfect for travel and easy playability.",
+    "price": "$600.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Taylor+GS+Mini",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 17,
+    "title": "Larrivée Parlor",
+    "description": "Small body guitar with a warm, balanced tone.",
+    "price": "$1,500.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Larrivée+Parlor",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 18,
+    "title": "Fender Mustang",
+    "description": "Short scale electric guitar with a unique sound.",
+    "price": "$1,000.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Fender+Mustang",
+    "categoryId": "electric"
+  },
+  {
+    "id": 19,
+    "title": "ESP Eclipse",
+    "description": "Electric guitar with a powerful sound and sleek design.",
+    "price": "$1,800.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=ESP+Eclipse",
+    "categoryId": "electric"
+  },
+  {
+    "id": 20,
+    "title": "Martin OM-28",
+    "description": "Orchestra model acoustic guitar with exceptional tone.",
+    "price": "$3,000.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Martin+OM-28",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 21,
+    "title": "Takamine GD30",
+    "description": "Acoustic guitar with solid top and beautiful finish.",
+    "price": "$800.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Takamine+GD30",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 22,
+    "title": "Yamaha Pacifica",
+    "description": "Electric guitar designed for versatile performance.",
+    "price": "$500.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Yamaha+Pacifica",
+    "categoryId": "electric"
+  },
+  {
+    "id": 23,
+    "title": "Duesenberg Starplayer",
+    "description": "High-end electric guitar known for its unique aesthetics.",
+    "price": "$2,500.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Duesenberg+Starplayer",
+    "categoryId": "electric"
+  },
+  {
+    "id": 24,
+    "title": "Gretsch White Falcon",
+    "description": "Stylish guitar with a distinctive sound and look.",
+    "price": "$3,200.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Gretsch+White+Falcon",
+    "categoryId": "electric"
+  },
+  {
+    "id": 25,
+    "title": "Charvel Pro-Mod",
+    "description": "Performance-oriented electric guitar with fast playability.",
+    "price": "$1,200.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Charvel+Pro-Mod",
+    "categoryId": "electric"
+  },
+  {
+    "id": 26,
+    "title": "Gibson SG",
+    "description": "Classic electric guitar with a slim body and powerful tone.",
+    "price": "$1,500.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Gibson+SG",
+    "categoryId": "electric"
+  },
+  {
+    "id": 27,
+    "title": "Epiphone Dot",
+    "description": "Affordable semi-hollow body guitar with classic looks.",
+    "price": "$700.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Epiphone+Dot",
+    "categoryId": "electric"
+  },
+  {
+    "id": 28,
+    "title": "Fender Player Series",
+    "description": "Modern take on classic Fender guitars with upgraded features.",
+    "price": "$900.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Fender+Player+Series",
+    "categoryId": "electric"
+  },
+  {
+    "id": 29,
+    "title": "Martin LX1E",
+    "description": "Travel-sized acoustic guitar with excellent sound.",
+    "price": "$1,000.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Martin+LX1E",
+    "categoryId": "acoustic"
+  },
+  {
+    "id": 30,
+    "title": "Rickenbacker 360",
+    "description": "Iconic electric guitar known for its jangly sound.",
+    "price": "$2,200.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Rickenbacker+360",
+    "categoryId": "electric"
+  },
+  {
+    "id": 31,
+    "title": "Fender Duo-Sonic",
+    "description": "Classic student guitar with a unique sound.",
+    "price": "$800.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Fender+Duo-Sonic",
+    "categoryId": "electric"
+  },
+  {
+    "id": 32,
+    "title": "Gibson ES-335",
+    "description": "Legendary semi-hollow body guitar with exceptional tone.",
+    "price": "$3,000.00",
+    "pictureUrl": "http://dummyimage.com/300x300.png/ffffff/000000&text=Gibson+ES-335",
+    "categoryId": "electric"
+  }
+]

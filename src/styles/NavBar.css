@@ -1,0 +1,27 @@
+nav {
+    background-color: goldenrod; 
+    padding: 1rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+}
+
+li {
+    margin: 0 1rem; 
+}
+
+.notActive {
+    color: white; 
+    text-decoration: none; 
+}
+
+.isActive {
+    text-decoration: none;
+    font-weight: bold; 
+    color: yellow;  
+}
