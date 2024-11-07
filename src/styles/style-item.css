@@ -7,8 +7,8 @@
     align-items: center;
     gap: 10px;
     border: white 2px solid;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 25px;
+    padding: 25px;
     text-align: center;
 }
 .item-style  img{

@@ -1,0 +1,19 @@
+.item-count-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-cart-button {
+    background-color: goldenrod; 
+    font-weight: bold;
+    width: 100%; 
+}

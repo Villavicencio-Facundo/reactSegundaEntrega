@@ -1,35 +1,47 @@
 import React, { useEffect, useState } from 'react'
-import mockProducts from '../assets/MOCK_DATA.json'
 import ItemList from './ItemList'
 import { useParams } from 'react-router-dom'
+import { db } from "../firebase/config"
+import { collection, getDocs, query, where } from 'firebase/firestore'
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
-    const [loading, setLoading] = useState(true) // Iniciar en true
     const { categoryId } = useParams()
 
     useEffect(() => {
-        setLoading(true) // Reiniciar a true al cambiar de categoría
-        const promise = new Promise((res) => {
-            setTimeout(() => {
-                res(mockProducts)
-            }, 2000)
-        })
-        promise.then((products) => {
-            let productsFiltered
-            if (categoryId) {
-                productsFiltered = products.filter(f => f.categoryId === categoryId)
-            } else {
-                productsFiltered = mockProducts
-            }
-            setProducts(productsFiltered)
-            setLoading(false) // Cambiar a false después de cargar los datos
-        })
+        (async () => {
+            try {
+                let productsFiltered = []
+
+                if (categoryId) {
+                    const q = query(
+                        collection(db, "products"),
+                        where("category", "==", categoryId)
+                    );
+
+                    const querySnapshot = await getDocs(q);
+                    querySnapshot.forEach((doc) => {
+                        console.log(doc.id, "=>", doc.data());
+                        productsFiltered.push({ id: doc.id, ...doc.data() })
+                    })
+                } else {
+                    const querySnapshot = await getDocs(collection(db, "products"))
+                    querySnapshot.forEach((doc) => {
+                        console.log(`${doc.id} => ${doc.data()}`)
+                        productsFiltered.push({ id: doc.id, ...doc.data() })
+                    })
+                }
+
+                setProducts(productsFiltered)
+            } catch (error) {
+                console.log(error)
+            } 
+        })()
     }, [categoryId])
 
-    return loading ? 
-        <h1>Loading..</h1> 
-        : 
-        <ItemList products={products}/>
+    return (
+        <ItemList products={products} />
+    )
 }
+
 export default ItemListContainer

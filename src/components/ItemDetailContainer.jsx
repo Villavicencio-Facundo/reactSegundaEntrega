@@ -1,31 +1,32 @@
 import React, { useEffect, useState } from 'react'
-import products from '../assets/MOCK_DATA.json'
 import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '../firebase/config'
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
-    const [loading, setLoading] = useState(true)
     const { id } = useParams()
 
     useEffect(() => {
-        const promise = new Promise((res) => {
-            setTimeout(() => {
-                res(products)
-            }, 2000);
-        });
+        (async () => {
+            try {
+                const docRef = doc(db, "products", id)
+                const docSnap = await getDoc(docRef)
+            
+                if (docSnap.exists()) {
+                    console.log("Document data:", docSnap.data())
+                    setProduct({ ...docSnap.data(), id })
+                } else {
+                    console.log("No existe el documento");
+                }
+            } catch (error) {
+                console.error("Error fetching product:", error)
+            }
+        })()
+    }, [id])
 
-        promise.then((products) => {
-            const foundProduct = products.find(productToFind => productToFind.id === Number(id))
-            setProduct(foundProduct)
-            setLoading(false)
-        });
-    }, [id]);
-
-    return loading ? 
-        <h1>Loading..</h1> 
-        : 
-        (product ? <ItemDetail product={product} /> : <h1>Product not found</h1>)
+    return product && <ItemDetail product={product}/>
 }
 
 export default ItemDetailContainer
