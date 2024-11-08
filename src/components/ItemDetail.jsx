@@ -1,17 +1,49 @@
 import React, { useState, useContext } from "react";
 import { Cart as CartContext } from "../context/CartProvider";
 import ItemCount from './ItemCount';
+import { NavLink, useNavigate } from 'react-router-dom';  
+import Swal from "sweetalert2";
 import '../styles/style-item.css';
-import { NavLink } from 'react-router-dom';
 
 const ItemDetail = ({ product }) => {
-  const { addCart } = useContext(CartContext);  // Obtenemos la función addCart desde el contexto
-  const [itemCountVisibility, setItemCountVisibility] = useState(true);  // Controlamos si mostramos el componente ItemCount
+  const { addCart } = useContext(CartContext); 
+  const [itemCountVisibility, setItemCountVisibility] = useState(true);
+  const [quantity, setQuantity] = useState(1);  
+  const navigate = useNavigate();  
 
   const handleCart = (quantity) => {
-    console.log(quantity);  // Solo para verificar que la cantidad es la correcta
-    setItemCountVisibility(false);  // Cuando se agrega el producto, ocultamos el contador
-    addCart(product, quantity);  // Llamamos a addCart para agregar el producto al carrito con la cantidad seleccionada
+    if (quantity > product.stock) {
+      Swal.fire({
+        icon: 'error',
+        title: '¡Error!',
+        text: 'No puedes agregar más unidades de las que hay en stock',
+      });
+      return;
+    }
+    setItemCountVisibility(false);  
+    addCart(product, quantity); 
+  };
+
+  const handleIncrease = () => {
+    if (quantity < product.stock) {
+      setQuantity(quantity + 1);
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: '¡Error!',
+        text: 'No puedes agregar más unidades de las que hay en stock',
+      });
+    }
+  };
+
+  const handleDecrease = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  const handleAddMore = () => {
+    navigate("/"); 
   };
 
   return (
@@ -23,11 +55,21 @@ const ItemDetail = ({ product }) => {
       <h4>Stock: {product.stock}</h4>
       
       {itemCountVisibility ? (
-        <ItemCount addCart={handleCart} /> 
+        <div>
+          <ItemCount 
+            addCart={handleCart}
+            quantity={quantity}
+            onIncrease={handleIncrease}
+            onDecrease={handleDecrease}
+          />
+        </div>
       ) : (
-        <NavLink to="/cart">
-          <button>Go to Cart</button>  {/* Cambié el botón para que sea un enlace */}
-        </NavLink>
+        <div>
+          <NavLink to="/cart">
+            <button>Ir a carrito</button>
+          </NavLink>
+          <button onClick={handleAddMore}>Agregar más productos</button>
+        </div>
       )}
     </div>
   );

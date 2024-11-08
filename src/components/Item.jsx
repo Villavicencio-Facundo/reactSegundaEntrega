@@ -11,7 +11,7 @@ const Item = ({ item }) => {
             <span>Precio: {item.price}</span>
             <h4>Stock: {item.stock}</h4>
             <NavLink to={`/detail/${item.id}`}>
-                <button>Detail</button>
+                <button>Ver más</button>
             </NavLink>
         </div>
     )

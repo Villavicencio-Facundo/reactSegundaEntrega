@@ -9,12 +9,9 @@ const CartWidget = () => {
 
   return (
     <div className="cart-widget-container">
-      {/* Solo usamos NavLink aquí para que todo el widget sea clickeable */}
-      <NavLink to="/cart">
-        <div className="cart-container">
-          <img className="cart" src={cartIcon} alt="Carrito" />
-          {quantity > 0 && <span>{quantity}</span>}  {/* Muestra la cantidad de productos si es mayor que 0 */}
-        </div>
+      <NavLink to="/cart" className="cart-container">
+        <img className="cart-icon" src={cartIcon} alt="Carrito" />
+        {quantity > 0 && <span className="cart-quantity">{quantity}</span>} 
       </NavLink>
     </div>
   );

@@ -1,7 +1,7 @@
 nav {
     display: flex;
-    justify-content: space-between; /* Alineamos los elementos del navbar */
-    align-items: center; /* Centrar los elementos verticalmente */
+    justify-content: space-between;
+    align-items: center; 
     padding: 10px 20px;
     background-color: goldenrod; 
     padding: 1rem; 
